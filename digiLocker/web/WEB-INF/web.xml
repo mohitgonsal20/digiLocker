@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>controller.AdminLoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserRegisterServlet</servlet-name>
+        <servlet-class>controller.UserRegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>controller.UploadServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UploadServlet2</servlet-name>
+        <servlet-class>controller.UploadServlet2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PendingSearch</servlet-name>
+        <servlet-class>controller.PendingSearch</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayServlet</servlet-name>
+        <servlet-class>controller.DisplayServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <servlet-class>controller.UserLoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>controller.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChangePassword</servlet-name>
+        <servlet-class>controller.ChangePassword</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SendEmail</servlet-name>
+        <servlet-class>controller.SendEmail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/AdminLoginServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserRegisterServlet</servlet-name>
+        <url-pattern>/UserRegisterServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/UploadServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UploadServlet2</servlet-name>
+        <url-pattern>/UploadServlet2.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PendingSearch</servlet-name>
+        <url-pattern>/PendingSearch.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayServlet</servlet-name>
+        <url-pattern>/DisplayServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <url-pattern>/UserLoginServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/UpdateServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChangePassword</servlet-name>
+        <url-pattern>/ChangePassword.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendEmail</servlet-name>
+        <url-pattern>/SendEmail.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    
+    <context-param>
+        <param-name>host</param-name>
+        <param-value>smtp.gmail.com</param-value>
+    </context-param>
+ 
+    <context-param>
+        <param-name>port</param-name>
+        <param-value>587</param-value>
+    </context-param>
+ 
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>games0308@gmail.com</param-value>
+    </context-param>
+ 
+    <context-param>
+        <param-name>pass</param-name>
+        <param-value>test123T</param-value>
+    </context-param>
+ 
+    
+    
+    
+</web-app>
